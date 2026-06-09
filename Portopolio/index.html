@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razel – UI/UX Designer & Front-End Developer</title>
+  <meta name="description"
+    content="Portfolio pribadi Muhammad Alfa Razel – Mahasiswa IT Telkom University yang menggabungkan keahlian UI/UX Design, Front-End Development, Sinematografi, dan Graphic Design." />
+  <meta name="keywords"
+    content="UI/UX Designer, Front-End Developer, Telkom University, Portofolio, Muhammad Alfa Razel" />
+  <meta property="og:title" content="Razel – Portfolio" />
+  <meta property="og:description" content="Dark-neon tech portfolio of Muhammad Alfa Razel – UI/UX, Code & Creative." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>Portofolio<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#creative" class="nav-link" id="nav-creative">Creative</a></li>
+        <li><a href="#leadership" class="nav-link" id="nav-leadership">Leadership</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span> Available for Opportunities
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Hello, Aku <span class="neon-text">Razel!</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Mahasiswa Teknologi Informasi · Telkom University
+      </p>
+      <p class="hero-desc" id="hero-desc">
+        Menyatukan <span class="neon-text">estetika visual</span> dan <span class="neon-text">fungsi bermakna</span>
+        —<br />
+        UI/UX Designer · Front-End Developer · Sinematografer
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-primary">
+          <span>Lihat Proyek</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-outline" id="hero-cta-secondary">Hubungi Saya</a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3.50</span>
+          <span class="stat-label">GPA / IPK</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Organisasi</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-avatar" id="hero-avatar">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring ring-2"></div>
+      <img src="assets/RazelFoto.jpeg" alt="Muhammad Alfa Razel" class="avatar-img" id="avatar-img" loading="lazy" />
+      <div class="avatar-glow"></div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT / PROFIL & EDUKASI ====== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" id="about-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Profil & <span class="neon-text">Edukasi</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" id="about-text">
+          <p>Saya adalah mahasiswa Teknologi Informasi di <strong class="neon-text">Telkom University</strong> yang
+            passionate dalam menggabungkan seni visual dengan teknologi. Bagi saya, setiap piksel punya makna dan setiap
+            baris kode adalah ekspresi kreativitas.</p>
+          <p>Dengan IPK <strong class="neon-text">3.50</strong>, saya aktif di berbagai proyek akademik dan kompetisi,
+            serta memimpin divisi media informasi di organisasi kampus.</p>
+          <div class="about-tags" id="about-tags">
+            <span class="tag" id="tag-uiux">UI/UX Design</span>
+            <span class="tag" id="tag-frontend">Front-End Dev</span>
+            <span class="tag" id="tag-cinema">Sinematografi</span>
+            <span class="tag" id="tag-graphic">Graphic Design</span>
+            <span class="tag" id="tag-photo">Fotografi</span>
+          </div>
+        </div>
+        <div class="timeline" id="education-timeline">
+          <div class="timeline-label">Riwayat Pendidikan <span class="timeline-hint">· klik untuk lihat foto</span>
+          </div>
+
+          <!-- SMAN 1 Sukaresmi -->
+          <a class="timeline-item timeline-clickable" id="timeline-smk" href="gallery-sman.html"
+            aria-label="Lihat foto masa SMA">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2019 – 2022</span>
+              <h4>SMAN 1 Sukaresmi</h4>
+              <p>Sekolah Menengah Atas – IPA</p>
+            </div>
+            <div class="timeline-photo-peek">
+              <img src="assets/sman_kelas.png" alt="Foto SMA" loading="lazy" />
+              <span class="peek-overlay">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Lihat Foto
+              </span>
+            </div>
+          </a>
+
+          <div class="timeline-connector"></div>
+
+          <!-- Telkom University -->
+          <a class="timeline-item timeline-clickable active" id="timeline-telkom" href="gallery-telkom.html"
+            aria-label="Lihat foto masa kuliah">
+            <div class="timeline-dot active-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2022 – Sekarang</span>
+              <h4>Telkom University</h4>
+              <p>S1 Teknologi Informasi · IPK <strong>3.50</strong></p>
+              <span class="timeline-badge">Aktif</span>
+            </div>
+            <div class="timeline-photo-peek">
+              <img src="assets/telkom_coding.png" alt="Foto Kuliah" loading="lazy" />
+              <span class="peek-overlay">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="M21 15l-5-5L5 21" />
+                </svg>
+                Lihat Foto
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" id="skills-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Core <span class="neon-text">Expertise</span></h2>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <div class="skill-card" id="skill-uiux">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="40" height="40" rx="8" stroke="currentColor" stroke-width="2" />
+              <path d="M14 24h20M24 14v20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang pengalaman pengguna yang intuitif, estetis, dan berorientasi pada kebutuhan pengguna nyata.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:90%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-figma">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="2" />
+              <rect x="8" y="8" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2" />
+              <rect x="8" y="24" width="16" height="16" rx="8" stroke="currentColor" stroke-width="2" />
+              <path d="M24 8h8a8 8 0 010 16H24V8z" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>Figma</h3>
+          <p>Prototyping, sistem desain, komponen reusable, dan kolaborasi tim desain dalam satu platform.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:88%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-frontend">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 18l-8 6 8 6M32 18l8 6-8 6M26 12l-4 24" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Front-End Dev</h3>
+          <p>HTML, CSS, JavaScript, Vue.js – Membangun antarmuka web yang responsif dan interaktif.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:80%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-photo">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2" />
+              <circle cx="24" cy="26" r="8" stroke="currentColor" stroke-width="2" />
+              <path d="M16 12l2-4h12l2 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <circle cx="36" cy="20" r="2" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>Fotografi</h3>
+          <p>Mengabadikan momen dengan komposisi dan pencahayaan yang artistik dan bercerita.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:85%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-video">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="30" height="28" rx="4" stroke="currentColor" stroke-width="2" />
+              <path d="M34 20l10-6v20l-10-6V20z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Videografi</h3>
+          <p>Produksi video sinematik dari konsep, pengambilan gambar, hingga pengeditan pasca produksi.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:78%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-graphic">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 40l8-8 6 6 10-14 8 16H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <circle cx="36" cy="14" r="6" stroke="currentColor" stroke-width="2" />
+              <path d="M4 8h8M4 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Desain konten visual media sosial, poster, dan identitas brand yang menarik dan konsisten.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:87%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-content">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2" />
+              <path d="M14 18h20M14 24h14M14 30h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Content Design</h3>
+          <p>Strategi konten digital yang menggabungkan visual storytelling dengan pesan yang tepat sasaran.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:83%"></div>
+          </div>
+        </div>
+        <div class="skill-card" id="skill-canva">
+          <div class="skill-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2" />
+              <path d="M24 10v28M10 24h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <circle cx="24" cy="24" r="6" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>Canva</h3>
+          <p>Produksi massal konten visual dengan template kustom, brand kit, dan kolaborasi tim.</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:92%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" id="projects-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Showcase <span class="neon-text">Proyek</span></h2>
+      </div>
+      <div class="project-filters" id="project-filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+        <button class="filter-btn" data-filter="uiux" id="filter-uiux">UI/UX & IMK</button>
+        <button class="filter-btn" data-filter="frontend" id="filter-frontend">Front-End Dev</button>
+        <button class="filter-btn" data-filter="collab" id="filter-collab">Kolaborasi</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project: Cleaning-Ku! -->
+        <article class="project-card" data-category="uiux" id="proj-cleaningku">
+          <div class="project-card-inner">
+            <div class="project-visual project-visual-1">
+              <div class="project-mock">
+                <div class="mock-screen">
+                  <div class="mock-bar"></div>
+                  <div class="mock-content">
+                    <div class="mock-elem w-60 h-4"></div>
+                    <div class="mock-elem w-80 h-8 accent"></div>
+                    <div class="mock-row">
+                      <div class="mock-card-sm"></div>
+                      <div class="mock-card-sm"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags-row">
+                <span class="proj-tag tag-uiux">UI/UX Research &amp; IMK</span>
+              </div>
+              <h3 class="project-title">Cleaning-Ku!</h3>
+              <p class="project-desc">Aplikasi manajemen kebersihan asrama dengan alur navigasi yang ramah pengguna.
+                Dikerjakan sebagai tugas IMK Semester 4 dengan fokus pada riset pengguna dan desain interaksi.</p>
+              <div class="project-meta">
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg> Sem. 4 – IMK</span>
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg> Figma, UX Research</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/u3eudzkdwt4qMrXUtokqvO/TUBES?node-id=0-1&t=8hiGE0LrCn7cK3MW-1"
+                  target="_blank" rel="noopener" class="proj-link proj-link-figma" id="link-cleaningku-figma">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Lihat di Figma
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: Meetly -->
+        <article class="project-card featured" data-category="frontend" id="proj-meetly">
+          <div class="project-card-inner">
+            <div class="project-visual project-visual-2">
+              <div class="project-mock">
+                <div class="mock-screen">
+                  <div class="mock-bar"></div>
+                  <div class="mock-content">
+                    <div class="mock-elem w-full h-4"></div>
+                    <div class="mock-feed">
+                      <div class="mock-post"></div>
+                      <div class="mock-post"></div>
+                      <div class="mock-post dim"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags-row">
+                <span class="proj-tag tag-frontend">Front-End Dev &amp; UI/UX</span>
+                <span class="proj-tag tag-featured">Featured</span>
+              </div>
+              <h3 class="project-title">Meetly</h3>
+              <p class="project-desc">Platform sosial akademik berformat Twitter/X yang dirancang khusus untuk
+                mahasiswa. Mengintegrasikan antarmuka responsif, manajemen postingan, dan sistem feed dinamis.</p>
+              <div class="project-meta">
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg> Sem. 5 – Front-End Dev</span>
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg> Vue.js, HTML, CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/bintangprajudha/meetly" target="_blank" rel="noopener"
+                  class="proj-link proj-link-github" id="link-meetly-github">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: Uangku -->
+        <article class="project-card" data-category="frontend" id="proj-uangku">
+          <div class="project-card-inner">
+            <div class="project-visual project-visual-3">
+              <div class="project-mock">
+                <div class="mock-screen">
+                  <div class="mock-bar"></div>
+                  <div class="mock-content">
+                    <div class="mock-balance"></div>
+                    <div class="mock-row">
+                      <div class="mock-tx"></div>
+                      <div class="mock-tx"></div>
+                    </div>
+                    <div class="mock-chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags-row">
+                <span class="proj-tag tag-frontend">Front-End Dev &amp; UI/UX</span>
+              </div>
+              <h3 class="project-title">Uangku</h3>
+              <p class="project-desc">Aplikasi manajemen keuangan pribadi dengan fitur manage category, tracking
+                pengeluaran, dan visualisasi data keuangan yang intuitif untuk mahasiswa.</p>
+              <div class="project-meta">
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg> Sem. 5 – Front-End Dev</span>
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg> Vue.js, JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/bintangprajudha/Uangku" target="_blank" rel="noopener"
+                  class="proj-link proj-link-github" id="link-uangku-github">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                  </svg>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: SoulSpace -->
+        <article class="project-card featured" data-category="collab" id="proj-soulspace">
+          <div class="project-card-inner">
+            <div class="project-visual project-visual-4">
+              <div class="project-mock">
+                <div class="mock-screen">
+                  <div class="mock-bar"></div>
+                  <div class="mock-content">
+                    <div class="mock-elem w-full h-6 soft"></div>
+                    <div class="mock-elem w-70 h-3"></div>
+                    <div class="mock-row mt-2">
+                      <div class="mock-card-sm soft"></div>
+                      <div class="mock-card-sm soft"></div>
+                      <div class="mock-card-sm soft"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags-row">
+                <span class="proj-tag tag-collab">UI/UX &amp; Team Collaboration</span>
+                <span class="proj-tag tag-featured">Hackathon</span>
+              </div>
+              <h3 class="project-title">SoulSpace</h3>
+              <p class="project-desc">Website kesehatan mental hasil kolaborasi lintas divisi di kompetisi hackathon The
+                Hack CCI. Peran: UI/UX Designer yang berkoordinasi dengan tim Web Dev dan Data Research.</p>
+              <div class="project-meta">
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg> Lomba The Hack CCI</span>
+                <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg> Figma, Research</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/NKXQPqYry5q3uLOQbMRXw5/THE-HACK-KELOMPOK-2?m=auto&t=k0261wsqiLcR87T2-6"
+                  target="_blank" rel="noopener" class="proj-link proj-link-figma" id="link-soulspace-figma">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  Lihat di Figma
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CREATIVE WORKS ====== -->
+  <section id="creative" class="section creative-section">
+    <div class="container">
+      <div class="section-header" id="creative-header">
+        <span class="section-tag">04 / Creative</span>
+        <h2 class="section-title">Creative <span class="neon-text">Works</span></h2>
+      </div>
+      <div class="creative-tabs" id="creative-tabs">
+        <button class="tab-btn active" data-tab="cinematography" id="tab-cinema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="15" height="14" rx="2" />
+            <path d="M17 11l5-3v8l-5-3V11z" />
+          </svg>
+          Sinematografi
+        </button>
+        <button class="tab-btn" data-tab="graphic" id="tab-graphic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <path d="M21 15l-5-5L5 21" />
+          </svg>
+          Graphic Design
+        </button>
+      </div>
+      <div class="tab-content active" id="tab-cinematography">
+        <div class="creative-grid">
+          <div class="creative-card video-card" id="creative-video-1">
+            <div class="video-thumb">
+              <div class="video-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
+                </svg>
+                <span>Lab Multimedia – Film Pendek</span>
+              </div>
+              <div class="video-overlay">
+                <span class="play-btn-icon">▶ Tonton</span>
+              </div>
+            </div>
+            <div class="creative-card-info">
+              <h4>Film Dokumenter Kampus</h4>
+              <p>Laboratorium Multimedia · Sinematografi</p>
+            </div>
+          </div>
+          <div class="creative-card video-card" id="creative-video-2">
+            <div class="video-thumb">
+              <div class="video-placeholder alt">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
+                </svg>
+                <span>Short Film – Storyboard</span>
+              </div>
+              <div class="video-overlay">
+                <span class="play-btn-icon">▶ Tonton</span>
+              </div>
+            </div>
+            <div class="creative-card-info">
+              <h4>Short Film Production</h4>
+              <p>Laboratorium Multimedia · Videografi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-graphic">
+        <div class="creative-grid graphic-grid">
+          <div class="graphic-card" id="graphic-hmit">
+            <div class="graphic-thumb hmit-thumb">
+              <div class="graphic-label-overlay">
+                <span>HMIT 2024-2025</span>
+              </div>
+            </div>
+            <div class="creative-card-info">
+              <h4>Desain Feed HMIT</h4>
+              <p>Konten Sosial Media · Himpunan Mahasiswa IT</p>
+            </div>
+          </div>
+          <div class="graphic-card" id="graphic-cianjuran">
+            <div class="graphic-thumb cianjuran-thumb">
+              <div class="graphic-label-overlay">
+                <span>Komunitas Cianjuran</span>
+              </div>
+            </div>
+            <div class="creative-card-info">
+              <h4>Identitas Visual Komunitas</h4>
+              <p>Desain Konten · Komunitas Cianjuran</p>
+            </div>
+          </div>
+          <div class="graphic-card" id="graphic-binadesa">
+            <div class="graphic-thumb binadesa-thumb">
+              <div class="graphic-label-overlay">
+                <span>Bina Desa</span>
+              </div>
+            </div>
+            <div class="creative-card-info">
+              <h4>Konten Program Bina Desa</h4>
+              <p>Desain Poster &amp; Social Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LEADERSHIP ====== -->
+  <section id="leadership" class="section leadership-section">
+    <div class="container">
+      <div class="section-header" id="leadership-header">
+        <span class="section-tag">05 / Leadership</span>
+        <h2 class="section-title">Organisasi & <span class="neon-text">Kepemimpinan</span></h2>
+      </div>
+      <div class="leadership-slider" id="leadership-slider">
+        <div class="slider-track" id="slider-track">
+          <!-- 1. Ketua Bidang Medinfo | HMIT Telkom University (2026) -->
+          <div class="leader-card" id="leader-hmit-2026">
+            <div class="leader-card-header">
+              <div class="leader-icon hmit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                  <polyline points="2 17 12 22 22 17" />
+                  <polyline points="2 12 17 22 12" />
+                </svg>
+              </div>
+              <span class="leader-year">2026</span>
+            </div>
+            <h4>Ketua Bidang Medinfo</h4>
+            <p class="leader-org">HMIT – Himpunan Mahasiswa Teknologi Informasi</p>
+            <p class="leader-desc">Mengelola jadwal konten media sosial, memimpin tim Medinfo dalam desain visual,
+              menyusun arsip dokumentasi evaluasi, dan mengoptimalkan Instagram HMIT.</p>
+            <div class="leader-tags">
+              <span>Management</span><span>Creative Director</span><span>Strategic Info</span>
+            </div>
+          </div>
+
+          <!-- 2. Anggota Bidang Sinematografi | Laboratorium Multimedia (2026) -->
+          <div class="leader-card" id="leader-multimedia-2026">
+            <div class="leader-card-header">
+              <div class="leader-icon multimedia-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                  <line x1="7" y1="2" x2="7" y2="22" />
+                  <line x1="17" y1="2" x2="17" y2="22" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <line x1="2" y1="7" x2="7" y2="7" />
+                  <line x1="2" y1="17" x2="7" y2="17" />
+                  <line x1="17" y1="17" x2="22" y2="17" />
+                  <line x1="17" y1="7" x2="22" y2="7" />
+                </svg>
+              </div>
+              <span class="leader-year">2026</span>
+            </div>
+            <h4>Anggota Bidang Sinematografi</h4>
+            <p class="leader-org">Laboratorium Multimedia – Telkom University</p>
+            <p class="leader-desc">Mengembangkan visual lewat lighting dan kamera. Berkontribusi pada storyboard, color
+              grading, dan kolaborasi lintas divisi (Game Dev & Programming).</p>
+            <div class="leader-tags">
+              <span>Cinematography</span><span>Video Editing</span><span>Multimedia</span>
+            </div>
+          </div>
+
+          <!-- 3. Anggota Staff Ahli Kominfo | HMIT Telkom University (2025) -->
+          <div class="leader-card" id="leader-hmit-2025">
+            <div class="leader-card-header">
+              <div class="leader-icon hmit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
+              </div>
+              <span class="leader-year">2025</span>
+            </div>
+            <h4>Anggota Staff Ahli Kominfo</h4>
+            <p class="leader-org">HMIT – Himpunan Mahasiswa Teknologi Informasi</p>
+            <p class="leader-desc">Terlibat dalam dokumentasi kegiatan (foto/video), membantu publikasi konten Instagram
+              HMIT, serta mendukung kegiatan program kerja dari divisi lainnya.</p>
+            <div class="leader-tags">
+              <span>Content Design</span><span>Documentation</span><span>Collaboration</span>
+            </div>
+          </div>
+
+          <!-- 4. Anggota Staff Muda Kominfo | HMIT Telkom University (2024) -->
+          <div class="leader-card" id="leader-hmit-2024">
+            <div class="leader-card-header">
+              <div class="leader-icon hmit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <span class="leader-year">2024</span>
+            </div>
+            <h4>Anggota Staff Muda Kominfo</h4>
+            <p class="leader-org">HMIT – Himpunan Mahasiswa Teknologi Informasi</p>
+            <p class="leader-desc">Membantu pembuatan dan publikasi konten Instagram HMIT serta mendokumentasikan
+              kegiatan untuk arsip dan kebutuhan publikasi digital.</p>
+            <div class="leader-tags">
+              <span>Social Media</span><span>Photography</span><span>Videography</span>
+            </div>
+          </div>
+
+          <!-- 5. Anggota Divisi UI/UX | CCI Telkom University (2024) -->
+          <div class="leader-card" id="leader-cci-2024">
+            <div class="leader-card-header">
+              <div class="leader-icon cci-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03454 19.176 5.0979 19.4328 5.02102 19.6738C4.84655 20.2208 4.75 20.8 4.75 21.4C4.75 21.7314 5.01863 22 5.35 22H12Z" />
+                  <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
+                  <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
+                  <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
+                </svg>
+              </div>
+              <span class="leader-year">2024</span>
+            </div>
+            <h4>Anggota Divisi UI/UX</h4>
+            <p class="leader-org">CCI – Telkom University</p>
+            <p class="leader-desc">Mengembangkan pengalaman pengguna (UX) intuitif untuk dashboard pemantauan server
+              komputer serta mendesain ikon dan grafik status sistem data.</p>
+            <div class="leader-tags">
+              <span>UI/UX Design</span><span>Dashboard</span><span>Figma</span>
+            </div>
+          </div>
+
+          <!-- 6. Koordinator Pubdok | Yayasan Pelita SMA Negeri 1 Sukaresmi (2023 - 2024) -->
+          <div class="leader-card" id="leader-pelita-2023">
+            <div class="leader-card-header">
+              <div class="leader-icon pelita-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                  <circle cx="12" cy="13" r="4" />
+                </svg>
+              </div>
+              <span class="leader-year">2023 – 2024</span>
+            </div>
+            <h4>Koordinator Pubdok</h4>
+            <p class="leader-org">Yayasan Pelita SMA Negeri 1 Sukaresmi</p>
+            <p class="leader-desc">Memimpin divisi Publikasi & Dokumentasi (Pubdok) dalam penyusunan info kegiatan dan
+              mengelola media sosial Instagram untuk mengenalkan yayasan.</p>
+            <div class="leader-tags">
+              <span>Pubdok</span><span>Instagram</span><span>Media Relations</span>
+            </div>
+          </div>
+
+          <!-- 7. Ketua Kominfo | UKM Daerah (Komunitas Cianjuran Telkom University) (2023 - 2024) -->
+          <div class="leader-card" id="leader-cianjuran">
+            <div class="leader-card-header">
+              <div class="leader-icon cianjuran-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <span class="leader-year">2023 – 2024</span>
+            </div>
+            <h4>Ketua Kominfo</h4>
+            <p class="leader-org">Komunitas Cianjuran – Telkom University</p>
+            <p class="leader-desc">Mengatur jadwal publikasi konten Instagram secara konsisten serta memimpin tim dalam
+              pembuatan laporan dokumentasi kegiatan untuk keperluan evaluasi.</p>
+            <div class="leader-tags">
+              <span>Branding</span><span>Community</span><span>Management</span>
+            </div>
+          </div>
+
+          <!-- 8. Koordinator Event Pasgalang | Pramuka SMA Negeri 1 Sukaresmi (2022 - 2023) -->
+          <div class="leader-card" id="leader-pramuka-event">
+            <div class="leader-card-header">
+              <div class="leader-icon pramuka-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <span class="leader-year">2022 – 2023</span>
+            </div>
+            <h4>Koordinator Event Pasgalang</h4>
+            <p class="leader-org">Pramuka SMA Negeri 1 Sukaresmi</p>
+            <p class="leader-desc">Merencanakan dan memimpin berbagai kegiatan event Pasgalang, termasuk menyusun agenda
+              Wide Game luar ruangan dengan strategi dan kerja tim.</p>
+            <div class="leader-tags">
+              <span>Event Planner</span><span>Wide Game</span><span>Teamwork</span>
+            </div>
+          </div>
+
+          <!-- 9. Bendahara Umum | Pramuka SMA Negeri 1 Sukaresmi (2020 - 2023) -->
+          <div class="leader-card" id="leader-pramuka-bendahara">
+            <div class="leader-card-header">
+              <div class="leader-icon pramuka-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                </svg>
+              </div>
+              <span class="leader-year">2020 – 2023</span>
+            </div>
+            <h4>Bendahara Umum</h4>
+            <p class="leader-org">Pramuka SMA Negeri 1 Sukaresmi</p>
+            <p class="leader-desc">Melaksanakan administrasi keuangan organisasi secara rutin dan bertanggung jawab
+              penuh atas pengelolaan kas mingguan Pramuka SMAN 1 Sukaresmi.</p>
+            <div class="leader-tags">
+              <span>Finance</span><span>Administration</span><span>Scount</span>
+            </div>
+          </div>
+
+          <!-- 10. Tentang Razel ✨ (Fun Facts) -->
+          <div class="leader-card" id="leader-funfact">
+            <div class="leader-card-header">
+              <div class="leader-icon fun-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" />
+                </svg>
+              </div>
+              <span class="leader-year">Fun Facts</span>
+            </div>
+            <h4>Tentang Razel ✨</h4>
+            <p class="leader-org">Personal Facts</p>
+            <p class="leader-desc">Percaya bahwa desain yang baik adalah yang tak perlu dijelaskan. Suka menyeruput kopi
+              sambil debugging. Penggemar sinema dan street photography.</p>
+            <div class="leader-tags">
+              <span>☕ Coffee</span><span>🎬 Cinema</span><span>📸 Photography</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls" id="slider-controls">
+          <button class="slider-btn" id="slider-prev" aria-label="Previous">&#8592;</button>
+          <div class="slider-dots" id="slider-dots"></div>
+          <button class="slider-btn" id="slider-next" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" id="contact-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Mari <span class="neon-text">Terhubung</span></h2>
+        <p class="section-subtitle">Punya proyek menarik, tawaran kolaborasi, atau sekadar ingin ngobrol? Jangan ragu
+          untuk menghubungi saya!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-links" id="contact-links">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="contact-link-card"
+            id="contact-wa">
+            <div class="contact-link-icon whatsapp-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-link-label">WhatsApp</span>
+              <span class="contact-link-val">Chat Langsung</span>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="mailto:alfarazel.73@gmail.com" class="contact-link-card" id="contact-email">
+            <div class="contact-link-icon email-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">alfarazel.73@gmail.com</span>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/muhammadalfarazel" target="_blank" rel="noopener" class="contact-link-card"
+            id="contact-linkedin">
+            <div class="contact-link-icon linkedin-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">Muhammad Alfa Razel</span>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group" id="form-group-name">
+            <label for="contact-name">Nama Lengkap</label>
+            <input type="text" id="contact-name" name="name" placeholder="Nama Anda..." autocomplete="name" required />
+          </div>
+          <div class="form-group" id="form-group-email">
+            <label for="contact-email-input">Email</label>
+            <input type="email" id="contact-email-input" name="email" placeholder="email@contoh.com"
+              autocomplete="email" required />
+          </div>
+          <div class="form-group" id="form-group-message">
+            <label for="contact-message">Pesan</label>
+            <textarea id="contact-message" name="message" placeholder="Halo Razel, saya ingin berdiskusi tentang..."
+              rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+            <span id="submit-text">Kirim Pesan</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+          <p class="form-note" id="form-success"
+            style="display:none; color: var(--neon); margin-top: 1rem; text-align: center;">✅ Pesan terkirim! Saya akan
+            segera merespons.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>Razel<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">© 2025 Muhammad Alfa Razel · Built with ❤️ & ☕ · Telkom University</p>
+        <div class="footer-links">
+          <a href="#hero" id="footer-home">Home</a>
+          <a href="#projects" id="footer-projects">Projects</a>
+          <a href="#contact" id="footer-contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

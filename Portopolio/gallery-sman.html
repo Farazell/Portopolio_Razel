@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri SMA – SMAN 1 Sukaresmi | Razel Portfolio</title>
+  <meta name="description" content="Kenangan masa SMA di SMAN 1 Sukaresmi – Muhammad Alfa Razel" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body class="gallery-page">
+
+  <!-- Back Button -->
+  <a href="index.html#about" class="gallery-back" id="gallery-back-btn">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Kembali ke Portfolio
+  </a>
+
+  <!-- Page Header -->
+  <header class="gallery-header">
+    <div class="gallery-header-inner">
+      <div class="gallery-breadcrumb">
+        <a href="index.html">Portfolio</a>
+        <span>→</span>
+        <a href="index.html#about">Riwayat Pendidikan</a>
+        <span>→</span>
+        <span class="active">SMAN 1 Sukaresmi</span>
+      </div>
+      <div class="gallery-meta-row">
+        <div>
+          <span class="gallery-period-badge">2019 – 2022</span>
+          <h1 class="gallery-title">SMAN 1 Sukaresmi</h1>
+          <p class="gallery-subtitle">Sekolah Menengah Atas – Jurusan IPA · Sukaresmi, Cianjur</p>
+        </div>
+        <div class="gallery-stats-row">
+          <div class="gallery-stat">
+            <span class="gs-num">3</span>
+            <span class="gs-label">Tahun</span>
+          </div>
+          <div class="gallery-stat">
+            <span class="gs-num">IPA</span>
+            <span class="gs-label">Jurusan</span>
+          </div>
+        </div>
+      </div>
+      <p class="gallery-desc">
+        Kenangan indah selama tiga tahun di <strong>SMAN 1 Sukaresmi</strong> — dari ruang kelas penuh semangat, praktikum IPA, kegiatan ekstrakurikuler, hingga momen-momen berharga bersama teman seperjuangan.
+      </p>
+    </div>
+  </header>
+
+  <!-- Gallery Grid -->
+  <main class="gallery-main">
+    <div class="gallery-container">
+
+      <!-- Section: Kehidupan Kelas -->
+      <section class="gallery-section">
+        <div class="gallery-section-label">
+          <span class="section-num">01</span>
+          <h2>Kehidupan Kelas</h2>
+        </div>
+        <div class="photo-grid grid-asymmetric">
+          <div class="photo-item large" id="photo-sman-1">
+            <img src="assets/sman_kelas.png" alt="Suasana belajar di kelas" loading="eager" />
+            <div class="photo-caption">Suasana belajar di kelas IPA</div>
+          </div>
+          <div class="photo-item" id="photo-sman-2">
+            <img src="assets/sman_photos.png" alt="Diskusi kelompok" loading="lazy" />
+            <div class="photo-caption">Diskusi kelompok pelajaran</div>
+          </div>
+          <div class="photo-item" id="photo-sman-3">
+            <img src="assets/sman_photos.png" alt="Belajar di perpustakaan" loading="lazy" />
+            <div class="photo-caption">Belajar di perpustakaan sekolah</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Kegiatan & Event -->
+      <section class="gallery-section">
+        <div class="gallery-section-label">
+          <span class="section-num">02</span>
+          <h2>Kegiatan & Event</h2>
+        </div>
+        <div class="photo-grid grid-equal">
+          <div class="photo-item" id="photo-sman-4">
+            <img src="assets/sman_event.png" alt="Event sekolah" loading="lazy" />
+            <div class="photo-caption">Event & kegiatan sekolah</div>
+          </div>
+          <div class="photo-item" id="photo-sman-5">
+            <img src="assets/sman_event.png" alt="Upacara bendera" loading="lazy" />
+            <div class="photo-caption">Upacara bendera bersama</div>
+          </div>
+          <div class="photo-item" id="photo-sman-6">
+            <img src="assets/sman_kelas.png" alt="Foto bersama teman" loading="lazy" />
+            <div class="photo-caption">Foto bersama teman kelas</div>
+          </div>
+          <div class="photo-item" id="photo-sman-7">
+            <img src="assets/sman_event.png" alt="Kegiatan ekstrakurikuler" loading="lazy" />
+            <div class="photo-caption">Kegiatan ekstrakurikuler</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Momen Spesial -->
+      <section class="gallery-section">
+        <div class="gallery-section-label">
+          <span class="section-num">03</span>
+          <h2>Momen Spesial</h2>
+        </div>
+        <div class="photo-grid grid-wide">
+          <div class="photo-item wide" id="photo-sman-8">
+            <img src="assets/sman_photos.png" alt="Foto wisuda SMA" loading="lazy" />
+            <div class="photo-caption">Momen kelulusan & wisuda SMA</div>
+          </div>
+          <div class="photo-item" id="photo-sman-9">
+            <img src="assets/sman_kelas.png" alt="Kenangan terakhir" loading="lazy" />
+            <div class="photo-caption">Kenangan kelas terakhir</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Placeholder Note -->
+      <div class="gallery-placeholder-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        <p>Tambahkan foto asli kamu ke folder <code>assets/</code> dan ganti path foto di <code>gallery-sman.html</code></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="gallery-footer">
+    <a href="index.html#about" class="btn btn-outline" id="gallery-footer-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      Kembali ke Portfolio
+    </a>
+    <a href="gallery-telkom.html" class="btn btn-primary" id="gallery-next-link">
+      Lihat Galeri Telkom University
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Tutup foto">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Foto sebelumnya">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightbox-img" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Foto berikutnya">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+    <div class="lightbox-counter" id="lightbox-counter">1 / 9</div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
