@@ -4,9 +4,15 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://localhost:8000", // <- Sesuaikan dengan port local server proyek Anda (misal Laravel: 8000, Vite: 5173)
-            "webRoot": "${workspaceFolder}",
+            "name": "Buka index.html Langsung (Tanpa Server)",
+            "file": "${workspaceFolder}/Portopolio/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Hubungkan ke Local Server (Port 8000)",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

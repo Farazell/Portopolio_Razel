@@ -322,4 +322,53 @@ document.addEventListener('DOMContentLoaded', () => {
   // ====== TIMELINE → navigation to gallery pages handled via <a> href ======
   // No JS needed — links navigate naturally to gallery-sman.html / gallery-telkom.html
 
+  // ====== PROJECT LIGHTBOX ======
+  const projVisuals    = document.querySelectorAll('.project-visual');
+  const projLightbox   = document.getElementById('project-lightbox');
+  const projLbImg      = document.getElementById('project-lightbox-img');
+  const projLbCaption  = document.getElementById('project-lightbox-caption');
+  const projLbClose    = document.getElementById('project-lightbox-close');
+
+  projVisuals.forEach(visual => {
+    visual.addEventListener('click', () => {
+      const img = visual.querySelector('.project-showcase-img');
+      const card = visual.closest('.project-card');
+      const title = card ? card.querySelector('.project-title')?.textContent : '';
+
+      if (img && projLightbox && projLbImg) {
+        projLbImg.src = img.src;
+        projLbImg.alt = img.alt || title;
+        if (projLbCaption) projLbCaption.textContent = title;
+        
+        projLightbox.classList.add('open');
+        projLightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  if (projLbClose) {
+    projLbClose.addEventListener('click', closeProjLightbox);
+  }
+
+  if (projLightbox) {
+    projLightbox.addEventListener('click', e => {
+      if (e.target === projLightbox) closeProjLightbox();
+    });
+  }
+
+  function closeProjLightbox() {
+    if (projLightbox) {
+      projLightbox.classList.remove('open');
+      projLightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  }
+
+  document.addEventListener('keydown', e => {
+    if (projLightbox && projLightbox.classList.contains('open') && e.key === 'Escape') {
+      closeProjLightbox();
+    }
+  });
+
 });
